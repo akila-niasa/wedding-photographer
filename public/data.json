@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "name": "wedding",
+        "details":"Wedding is most important culture in Bangladesh.I always try to make people wedding's moment best capture in a frame.",
+        "price":13000,
+        "image": "https://i.ibb.co/KykWwfB/images-2.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Reception",
+        "details":"Reception is second important memory for bridge and groom.So i try my best to make it happier",
+        "price":10000,
+        "image": "https://i.ibb.co/Rbt7jK0/images-3.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Gaye Holud",
+        "details":"Gaye holud is most important part in bangali culture.So i try my best to make it happier",
+        "price":9000,
+        "image":"https://i.ibb.co/x8F0L3t/unnamed.webp"
+      }
+     
+]
