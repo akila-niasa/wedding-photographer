@@ -25,12 +25,12 @@ const Home = () => {
             </div>
             </div>
             {/* client review */}
-            <div  className='mt-5'>
+            <div  className='mt-5 container'>
                 <h2  className='text-bold mx-auto title'>Latest Client Review</h2>
-            <div className='d-flex justify-content-around mb-5'>
-                <div><img  src="https://i.ibb.co/tMfzs1K/unnamed-4.webp" alt="" /></div>
-                <div>
-                    <p>He is an amazing photographer.Every wedding is a new experience and every photograph become part of it. He's capture unique photo at my wedding which is the best memory in my life.He is connecting the most important and fascinating thing. </p>
+            <div className='row'>
+                <div className='col-lg-6 col-12'><img className='img-fluid'  src="https://i.ibb.co/tMfzs1K/unnamed-4.webp" alt="" /></div>
+                <div className='col-lg-6 col-12'>
+                    <p>He is an amazing photographer.Every wedding is an important occasion and every photograph become part of it. He's capture unique photo at my wedding which is the best memory in my wedding.He is connecting the most important and fascinating thing. </p>
                 </div>
             </div>
             </div>

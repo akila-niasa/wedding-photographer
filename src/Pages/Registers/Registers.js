@@ -32,7 +32,7 @@ const Registers = () => {
     const handleSubmit=event=>{
         event.preventDefault()
         if(password!==confirmPassword){
-            setError("'your password don't match")
+           setError("'your password don't match")
         }
       else{
         createUserWithEmailAndPassword(email,password)

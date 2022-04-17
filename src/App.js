@@ -10,6 +10,7 @@ import Login from './Pages/Login/Login';
 import CheckOut from './Pages/CheckOut/CheckOut';
 import Registers from './Pages/Registers/Registers';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
+import NotFound from './Pages/NotFound/NotFound';
 
 
 
@@ -26,6 +27,8 @@ function App() {
      
       <Route path='/login' element={<Login/>}/>
       <Route path='/register' element={<Registers/>}/>
+      <Route path='*' element={<NotFound/>}/>
+
       </Routes>
      
     </div>
