@@ -20,6 +20,7 @@ const Header = () => {
     <Nav className="mx-auto">
     <Link to='/' className='text-decoration-none text-light p-2 m-2'>Home</Link>
         <Link to='/about'className='text-decoration-none text-light p-2 m-2'>About Me</Link>
+        <Link to='/blogs'className='text-decoration-none text-light p-2 m-2'>Blogs</Link>
        {
          user?<button onClick={logout} className='text-decoration-none text-light p-2 m-2 btn'>Log Out</button>
          : <Link to='/login'className='text-decoration-none text-light p-2 m-2'>Login</Link>
