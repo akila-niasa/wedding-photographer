@@ -5,12 +5,11 @@ import auth from '../../firebase.init';
 
 const SocialLogin = () => {
     const navigate=useNavigate()
-    let location=useLocation()
-    let from = location.state?.from?.pathname || "/";
+    
 
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     if(user){
-        navigate(from, { replace: true })
+        navigate('/')
     }
     return (
         <div>
