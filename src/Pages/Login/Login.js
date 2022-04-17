@@ -1,21 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css'
 
 const Login = () => {
+    const [email,setEmail]=useState('')
+    const [password,setPassword]=useState('')
+    const [confirmPassword,setConfirmPassword]=useState('')
+    const[error,setError]=useState('')
+    const navigate=useNavigate()
+  
+    const handleEmail=event=>{
+        setEmail(event.target.value);
+    }
+    const handlePassword=event=>{
+        setPassword(event.target.value)
+    }
     return (
         <div className='container card w-50 mx-auto mt-5'>
         <h2 className='text-primary fw-bold text-center mt-4 mb-3'>Please Login</h2>
         <Form >
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control  type="email" placeholder="Enter email" required />
+                <Form.Control onBlur={handleEmail}  type="email" placeholder="Enter email" required />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Label>Password</Form.Label>
-                <Form.Control type="password" placeholder="Password" required />
+                <Form.Control onBlur={handlePassword} type="password" placeholder="Password" required />
             </Form.Group>
            
            
@@ -23,7 +36,7 @@ const Login = () => {
             <Button className='button' variant="primary" type="submit">
                 Submit
             </Button>
-
+            <SocialLogin/>
         </Form>
         <p>New in my site? <Link to="/register" className='text-primary pe-auto text-decoration-none' >Please Register</Link> </p>
        

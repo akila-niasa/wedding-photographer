@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <Navbar collapseOnSelect expand="lg" className='nav' variant="dark" sticky="top" >
   <Container>
-  <Navbar.Brand href="#home">Independent Photography</Navbar.Brand>
+  <Navbar.Brand href="#home">Wedding Photography</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mx-auto">
