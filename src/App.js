@@ -7,6 +7,10 @@ import Footer from './Shared/Footer/Footer';
 import Home from './Pages/Home/Home';
 import AboutMe from './Pages/AboutMe/AboutMe';
 import Login from './Pages/Login/Login';
+import CheckOut from './Pages/CheckOut/CheckOut';
+import Registers from './Pages/Registers/Registers';
+
+
 
 function App() {
   return (
@@ -15,7 +19,10 @@ function App() {
       <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/about' element={<AboutMe/>}/>
+      <Route path='/checkout' element={<CheckOut/>}/>
+     
       <Route path='/login' element={<Login/>}/>
+      <Route path='/register' element={<Registers/>}/>
       </Routes>
      
     </div>
