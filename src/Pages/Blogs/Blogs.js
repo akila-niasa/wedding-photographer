@@ -12,7 +12,7 @@ const Blogs = () => {
             <div className='border p-3 m-5 rounded shadow'>
                 <h2>Why are you using firebase? What other options do you have to implement authentication?</h2>
                 <p>Firebase is incredibly simple backend solution.In firebase we get Authentication system.It made file storing.we can use Remote Configuration in firebase.All of this reasons I use Firebase.</p>
-                <p> Back4App,Parse,AWS Amplify,Couchbase, NativeScript,RxDB,LoopBack etc. i have use to implement authentication.</p>
+                <p> Back4App,Parse,AWS Amplify,Supabase,Nhost etc. i have use to implement authentication.</p>
             </div>
             <div className='border p-3 m-5 rounded shadow'>
                 <h2>What other services does firebase provide other than authentication</h2>
