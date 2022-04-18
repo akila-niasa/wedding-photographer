@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import { WeddingContext } from '../../App';
 import auth from '../../firebase.init';
 import useData from '../../hooks/useData';
+import Footer from '../../Shared/Footer/Footer';
 import './CheckOut.css'
 
 const Checkout = () => {
@@ -68,6 +69,7 @@ const Checkout = () => {
                     <Toaster />
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 };

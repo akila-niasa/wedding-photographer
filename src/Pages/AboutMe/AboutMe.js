@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../../Shared/Footer/Footer';
 
 const AboutMe = () => {
     return (
@@ -12,6 +13,7 @@ const AboutMe = () => {
                     I want to be a full stack web developer after 5 or 6 months.At this mission,I want to learning all at time.I want to use my time to proper learning ,because without learning no one can success in their work.In this process,I want to complete my course on time.
                 </p>
             </div>
+            <Footer/>
         </div>
     );
 };

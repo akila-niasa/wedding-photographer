@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../../Shared/Footer/Footer';
 
 const Blogs = () => {
     return (
@@ -17,6 +18,7 @@ const Blogs = () => {
                 <h2>What other services does firebase provide other than authentication</h2>
                 <p>Without authentication we can use firebase in another ways.We can use it at hosting any site.We also use it to google analytics.It has cloud storage.It has also cloud functions.All above the site we use in firebase.</p>
             </div>
+            <Footer/>
         </div>
     );
 };
