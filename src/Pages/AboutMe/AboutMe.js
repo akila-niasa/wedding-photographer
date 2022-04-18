@@ -4,7 +4,7 @@ const AboutMe = () => {
     return (
         <div>
             <div>
-                <img className='img-fluid' src="https://www.nicepng.com/png/detail/356-3568165_blank-profile-picture-female.png" alt="" />
+                <img className='img-fluid' src="https://i.ibb.co/ryhhYrS/my-2.jpg" alt="" />
             </div>
             <div>
                 <h4>Name: Athqiya Akila</h4>
