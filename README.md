@@ -12,6 +12,6 @@ This project live link [https://wedding-photographer-71122.web.app/](https://wed
 
 
 ### what framework I use in this project
-I use React Router,React Router Hooks,React Bootstrap,Bootstrap,Firebase in my project
+I use React Router,React Router Hooks,React Bootstrap,Bootstrap in my project
 
 
