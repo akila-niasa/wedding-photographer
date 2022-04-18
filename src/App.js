@@ -12,18 +12,23 @@ import Registers from './Pages/Registers/Registers';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
 import NotFound from './Pages/NotFound/NotFound';
 import Blogs from './Pages/Blogs/Blogs';
+import { createContext, useState } from 'react';
+import useData from './hooks/useData';
+
 
 
 
 function App() {
+  
   return (
     <div className="App">
       <Header/>
+      
       <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/about' element={<AboutMe/>}/>
       <Route path='/blogs' element={<Blogs/>}/>
-      <Route path='/checkout' element={<RequireAuth>
+      <Route path='/checkout/:id' element={<RequireAuth>
         <CheckOut/>
       </RequireAuth>}/>
      
@@ -32,6 +37,7 @@ function App() {
       <Route path='*' element={<NotFound/>}/>
 
       </Routes>
+    
      
     </div>
   );

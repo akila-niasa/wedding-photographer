@@ -1,20 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './Home.css'
 import Footer from '../../Shared/Footer/Footer';
 import Banner from '../Banner/Banner';
 import Services from '../Services/Services';
+import { WeddingContext } from '../../App';
+import useData from '../../hooks/useData';
 
 const Home = () => {
-    const [weddings, setWeddings] = useState([])
-    useEffect(() => {
-        fetch('data.json')
-            .then(res => res.json())
-            .then(data => setWeddings(data))
-    }, [])
+    const [weddings, setWeddings] = useData()
+    // useEffect(() => {
+    //     fetch('data.json')
+    //         .then(res => res.json())
+    //         .then(data => setWeddings(data))
+    // }, [setWeddings])
     return (
         <div >
             {/* <h1 className='text-bold mx-auto title'>Wedding Photography</h1> */}
-            {/* banner */}
+            {/* --------------banner------------- */}
             <Banner />
             {/* services */}
             <div className='container'>
@@ -25,9 +27,11 @@ const Home = () => {
                     }
                 </div>
             </div>
-            {/* client review */}
+            {/* 
+         -----------client review----------- 
+            */}
             <div className='mt-5 container  mb-5'>
-                <h2 className='fw-bold mx-auto title'>Latest Client Review</h2>
+                <h2 className='fw-bold mx-auto mb-3 title'>Latest Client Review</h2>
                 <div className='card'>
                 <div className='row p-5'>
                     <div className='col-lg-6 col-12'><img className='img-fluid' src="https://i.ibb.co/tMfzs1K/unnamed-4.webp" alt="" /></div>

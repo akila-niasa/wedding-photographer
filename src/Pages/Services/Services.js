@@ -4,7 +4,7 @@ import { Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Services = ({ wedding }) => {
-  const { name, details, price, image } = wedding
+  const { name, details, price, image,id } = wedding
   return (
     <div className='col-lg-4 col-md-6 g-2'>
       <Card style={{ width: '18rem' }} className="card">
@@ -17,7 +17,7 @@ const Services = ({ wedding }) => {
           <Card.Text>
             Price: ${price}
           </Card.Text>
-          <Link to='/checkout'>
+          <Link to={`/checkout/${id}`}>
             <Button className='button'>Go to Checkout</Button>
           </Link>
         </Card.Body>
