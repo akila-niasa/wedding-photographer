@@ -59,7 +59,8 @@ const Login = () => {
         }
     }
     return (
-        <div className='container card w-50 mx-auto mt-5'>
+        <div className='container '>
+            <div className=' card w-50 mx-auto mt-5 p-5 mb-5'>
             <h2 className='text-primary fw-bold text-center mt-4 mb-3'>Please Login</h2>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -83,6 +84,7 @@ const Login = () => {
 
             <p>New in My Site? <Link to="/register" className='text-primary pe-auto text-decoration-none' >Please Register</Link> </p>
 
+        </div>
         </div>
     );
 };

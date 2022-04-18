@@ -19,7 +19,7 @@ const Checkout = () => {
     </div>
     <div className="section"><span>2</span>Email & Phone</div>
     <div className="inner-wrap">
-      <label>Email Address <input type="email" name="field3" required/></label>
+      <label>Email Address <input type="email" name="field3"  value={user?.email} readOnly required/></label>
    
         <label>Phone Number <input type="text" name="field4" required/></label>
 

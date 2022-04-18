@@ -60,7 +60,7 @@ const Registers = () => {
     }
     return (
 
-        <div className='container Card w-50 mx-auto mt-5 '>
+        <div className='container Card w-50 mx-auto p-5 mt-5 mb-5'>
             <h2 className='text-primary fw-bold text-center mt-4 mb-3'>Please Registration</h2>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
